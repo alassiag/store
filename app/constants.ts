@@ -1,7 +1,7 @@
 export const INFORMATION = {
   avatar: "/assets/avatar.jpg",
   banner: "/assets/banner.jpg",
-  title: "TyniHome Deco",
+  title: "Tyni Home Deco",
   description: "Accesorios de Diseño y deco en fieltro.",  
   phone: `5493472503340`,
   sheet: `https://docs.google.com/spreadsheets/d/e/2PACX-1vRpdHYE5KHxCoEdt0dflEjrpHv6rOD46dcgE5roPqR22_uPMmW3GNu5hPz7nF72gD9yUk73lnOiSdoA/pub?output=csv`,
