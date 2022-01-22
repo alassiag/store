@@ -98,7 +98,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
           <Stack backgroundColor="gray.800" bordertop="1px" paddingY={3}>
             <Text color="white" fontSize="sm" fontWeight="500" textAlign="center">
               {new Date().getFullYear()}. TyniHome Deco - Seguinos en Instagram
-              {/*<Link isExternal href="https://instagram.com/tyni_home_deco" >*/}   
+              {/*<Link isExternal href="https://instagram.com/tyni_home_deco" >*/}
               {/*</Link>*/}
             </Text>
             {/* Inicio de copyright - Cambiar el contenido de los mismos viola el contenido de los terminos de licencia 
