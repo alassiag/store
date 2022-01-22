@@ -47,9 +47,9 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                 <Box
                   backgroundColor="white"
                   borderRadius={9999}
+                  marginLeft={{base: 0, sm: 6}}
                   marginTop={{base: -12, sm: -16}}
                   minWidth={{base: 24, sm: 32}}
-                  marginLeft={{base: 0, sm: 6}}
                   padding={1}
                 >
                   <Image
@@ -95,13 +95,10 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
             <Component {...pageProps} />
           </Stack>
           <Divider marginY={4} />
-          <Stack bordertop="1px" paddingY={3} backgroundColor="gray.800">
-            <Text
-              color="white" textAlign="center" fontSize="sm" fontWeight="500"
-            >
+          <Stack backgroundColor="gray.800" bordertop="1px" paddingY={3}>
+            <Text color="white" fontSize="sm" fontWeight="500" textAlign="center">
               {new Date().getFullYear()}. TyniHome Deco - Seguinos en Instagram
-              {/*<Link isExternal href="https://instagram.com/tyni_home_deco" >*/}
-                
+              {/*<Link isExternal href="https://instagram.com/tyni_home_deco" >*/}   
               {/*</Link>*/}
             </Text>
             {/* Inicio de copyright - Cambiar el contenido de los mismos viola el contenido de los terminos de licencia 
