@@ -75,7 +75,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                       <Link key={social.name} isExternal href={social.url}>
                         <Flex
                           alignItems="center"
-                          backgroundColor="green"
+                          backgroundColor="gray.500"
                           borderRadius={9999}
                           color="white"
                           height={10}
@@ -95,15 +95,28 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
             <Component {...pageProps} />
           </Stack>
           <Divider marginY={4} />
-          {/* Inicio de copyright - Cambiar el contenido de los mismos viola el contenido de los terminos de licencia */}
-          <Text textAlign="center">
+          <Stack 
+              direction="row"
+              justifyContent="center"
+              bordertop="1px" 
+              paddingY={3} 
+              backgroundColor="gray.800" 
+              marginbottom={2} >
+          <Text textAlign="center" fontWeight={400} color="gray.100" >
+            {new Date().getFullYear()}. TyniHome Deco - Seguinos en  
+            <Link isExternal href="https://instagram.com/tyni_home_deco"> Instagram</Link>
+          </Text>
+          {/* Inicio de copyright - Cambiar el contenido de los mismos viola el contenido de los terminos de licencia 
+          <Text textAlign="center" color="white">
+
             © Copyright {new Date().getFullYear()}. Hecho con ♥ para la comunidad, por{" "}
             <Link isExternal href="https://gonzalopozzo.com">
               goncy
             </Link>
             .
           </Text>
-          {/* Fin de copyright */}
+           Fin de copyright */}
+          </Stack>
         </Container>
       </ChakraProvider>
     </>
