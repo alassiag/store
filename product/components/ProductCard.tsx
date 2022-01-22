@@ -40,11 +40,10 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
             width={{base: 24, sm: 36}}
           />
           <Stack justifyContent="space-between" spacing={1} width="100%">
-            <Stack spacing={1}>
+            <Stack spacing={.5}>
               <Text fontWeight="500">{product.title}</Text>
-              <Text color="gray.500" fontSize="sm">
-                {product.description}
-              </Text>
+              <Text color="gray.500" fontSize="sm">{product.description}</Text>
+              
             </Stack>
             <Stack alignItems="flex-end" direction="row" justifyContent="space-between">
               <Text color="green.500" fontSize="sm" fontWeight="500">

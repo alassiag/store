@@ -35,7 +35,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
               <Image
                 borderRadius="lg"
                 height="100%"
-                maxHeight={64}
+                maxHeight={{base: "48", sm: "64"}}
                 objectFit="cover"
                 src={INFORMATION.banner}
               />
@@ -49,6 +49,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                   borderRadius={9999}
                   marginTop={{base: -12, sm: -16}}
                   minWidth={{base: 24, sm: 32}}
+                  marginLeft={{base: 0, sm: 6}}
                   padding={1}
                 >
                   <Image
@@ -74,7 +75,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                       <Link key={social.name} isExternal href={social.url}>
                         <Flex
                           alignItems="center"
-                          backgroundColor="primary.500"
+                          backgroundColor="green"
                           borderRadius={9999}
                           color="white"
                           height={10}
