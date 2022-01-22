@@ -29,45 +29,52 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
         {/* Fin de meta tags de licencia */}
       </Head>
       <ChakraProvider theme={theme}>
-        <Container backgroundColor="white" borderRadius="sm" maxWidth="container.xl" padding={4}>
+        <Container
+          backgroundColor="white"
+          borderRadius="sm"
+          maxWidth="container.xl"
+          padding={4}
+        >
           <Stack spacing={8}>
             <Stack marginBottom={4} spacing={4}>
               <Image
                 borderRadius="lg"
                 boxShadow=" 0 0 8px 4px rgba(0,0,0,0.96)"
                 height="100%"
-                maxHeight={{base: "48", sm: "64"}}
+                maxHeight={{ base: "48", sm: "64" }}
                 objectFit="cover"
                 src={INFORMATION.banner}
               />
               <Stack
                 alignItems="center"
-                direction={{base: "column", sm: "row"}}
-                spacing={{base: 3, sm: 6}}
+                direction={{ base: "column", sm: "row" }}
+                spacing={{ base: 3, sm: 6 }}
               >
                 <Box
                   backgroundColor="white"
                   borderRadius={9999}
-                  marginLeft={{base: 0, sm: 6}}
-                  marginTop={{base: -12, sm: -16}}
-                  minWidth={{base: 24, sm: 32}}
+                  marginLeft={{ base: 0, sm: 6 }}
+                  marginTop={{ base: -12, sm: -16 }}
+                  minWidth={{ base: 24, sm: 32 }}
                   padding={1}
                 >
                   <Image
-                    border="1px solid #3e3e3e"
+                    //border="1px solid #3e3e3e"
                     borderRadius={9999}
-                    height={{base: 24, sm: 32}}
+                    height={{ base: 24, sm: 32 }}
                     src={INFORMATION.avatar}
-                    width={{base: 24, sm: 32}}
+                    width={{ base: 24, sm: 32 }}
                   />
                 </Box>
                 <Stack
-                  alignItems={{base: "center", sm: "flex-start"}}
+                  alignItems={{ base: "center", sm: "flex-start" }}
                   spacing={3}
-                  textAlign={{base: "center", sm: "left"}}
+                  textAlign={{ base: "center", sm: "left" }}
                 >
                   <Stack spacing={0}>
-                    <Heading>{INFORMATION.title}</Heading>
+                    <Heading>
+                      {INFORMATION.title}
+                    </Heading>
                     <Text color="gray.500" fontWeight="500">
                       {INFORMATION.description}
                     </Text>
@@ -98,7 +105,12 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
           </Stack>
           <Divider marginY={4} />
           <Stack backgroundColor="gray.800" bordertop="1px" paddingY={3}>
-            <Text color="white" fontSize="sm" fontWeight="500" textAlign="center">
+            <Text
+              color="white"
+              fontSize="sm"
+              fontWeight="500"
+              textAlign="center"
+            >
               {new Date().getFullYear()}. Tyni Home Deco - Seguinos en Instagram
               {/*<Link isExternal href="https://instagram.com/tyni_home_deco" >*/}
               {/*</Link>*/}
