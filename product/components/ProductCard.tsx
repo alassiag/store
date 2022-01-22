@@ -28,30 +28,44 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
         justifyContent="space-between"
         spacing={3}
       >
-        <Stack direction="row" padding={2} spacing={4} width="100%">
+        <Stack
+          boxShadow={`3px 3px 10px -4px rgba(0,0,0,0.9)`}
+          direction="row"
+          padding={2}
+          spacing={4}
+          width="100%"
+        >
           <Image
             backgroundColor="white"
             borderRadius="md"
-            height={{base: 24, sm: 36}}
+            boxShadow={`3px 3px 10px -4px rgba(0,0,0,0.6)`}
+            height={{ base: 24, sm: 36 }}
             loading="lazy"
-            minWidth={{base: 24, sm: 36}}
+            minWidth={{ base: 24, sm: 36 }}
             objectFit="contain"
             src={product.image}
-            width={{base: 24, sm: 36}}
+            width={{ base: 24, sm: 36 }}
           />
           <Stack justifyContent="space-between" spacing={1} width="100%">
             <Stack spacing={1}>
               <Text fontWeight="500">{product.title}</Text>
-              <Text color="gray.500" fontSize="sm" lineHeight={1.4}>{product.description}</Text>
-              
+              <Text color="gray.500" fontSize="sm" lineHeight={1.4}>
+                {product.description}
+              </Text>
             </Stack>
-            <Stack alignItems="flex-end" direction="row" justifyContent="space-between">
+            <Stack
+              alignItems="flex-end"
+              direction="row"
+              justifyContent="space-between"
+            >
               <Text color="green.500" fontSize="sm" fontWeight="500">
                 {parseCurrency(product.price)}
               </Text>
               <Button
                 size="xs"
-                onClick={() => (product.options ? toggleModal(true) : onAdd(cartItem))}
+                onClick={() =>
+                  product.options ? toggleModal(true) : onAdd(cartItem)
+                }
               >
                 Agregar
               </Button>
