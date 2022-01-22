@@ -62,6 +62,7 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
                 {parseCurrency(product.price)}
               </Text>
               <Button
+                backgroundColor="gray.400"
                 size="xs"
                 onClick={() =>
                   product.options ? toggleModal(true) : onAdd(cartItem)
