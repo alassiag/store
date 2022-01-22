@@ -95,13 +95,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
             <Component {...pageProps} />
           </Stack>
           <Divider marginY={4} />
-          <Stack 
-              direction="row"
-              justifyContent="center"
-              bordertop="1px" 
-              paddingY={3} 
-              backgroundColor="gray.800" 
-              marginbottom={2} >
+          <Stack bordertop="1px" paddingY={3} backgroundColor="gray.800">
           <Text textAlign="center" fontWeight={400} color="gray.100" >
             {new Date().getFullYear()}. TyniHome Deco - Seguinos en  
             <Link isExternal href="https://instagram.com/tyni_home_deco"> Instagram</Link>
