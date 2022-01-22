@@ -54,6 +54,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                   padding={1}
                 >
                   <Image
+                    border="1px solid #3e3e3e"
                     borderRadius={9999}
                     height={{base: 24, sm: 32}}
                     src={INFORMATION.avatar}
