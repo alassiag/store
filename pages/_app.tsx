@@ -96,11 +96,13 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
           </Stack>
           <Divider marginY={4} />
           <Stack bordertop="1px" paddingY={3} backgroundColor="gray.800">
-            <Text>
-              {new Date().getFullYear()}. TyniHome Deco - Seguinos en
-              <Link isExternal href="https://instagram.com/tyni_home_deco">
-                Instagram
-              </Link>
+            <Text
+              color="white" textAlign="center" fontSize="sm" fontWeight="500"
+            >
+              {new Date().getFullYear()}. TyniHome Deco - Seguinos en Instagram
+              {/*<Link isExternal href="https://instagram.com/tyni_home_deco" >*/}
+                
+              {/*</Link>*/}
             </Text>
             {/* Inicio de copyright - Cambiar el contenido de los mismos viola el contenido de los terminos de licencia 
           <Text textAlign="center" color="white">
