@@ -29,6 +29,7 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
         spacing={3}
       >
         <Stack
+          backgroundColor="gray.100"
           boxShadow={`3px 3px 10px -4px rgba(0,0,0,0.9)`}
           direction="row"
           padding={2}
