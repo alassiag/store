@@ -99,7 +99,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
           <Divider marginY={4} />
           <Stack backgroundColor="gray.800" bordertop="1px" paddingY={3}>
             <Text color="white" fontSize="sm" fontWeight="500" textAlign="center">
-              {new Date().getFullYear()}. Tyni Home Deco - Seguinos en Instagram
+              {new Date().getFullYear()}. Tyni Home Deco - Seguinos en nuestras redes sociales
               {/*<Link isExternal href="https://instagram.com/tyni_home_deco" >*/}
               {/*</Link>*/}
             </Text>
