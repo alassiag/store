@@ -77,15 +77,16 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                       <Link key={social.name} isExternal href={social.url}>
                         <Flex
                           alignItems="center"
-                          backgroundColor="gray.500"
+                          //backgroundColor="gray.500"
                           borderRadius={9999}
+                          boxShadow="0 0 5px 2px rgba(25,25,25,0.4)"
                           color="white"
                           height={10}
                           justifyContent="center"
                           width={10}
                         >
                           <Image
-                            src={`https://icongr.am/fontawesome/${social.name}.svg?size=24&color=ffffff`}
+                            src={`https://icongr.am/fontawesome/${social.name}.svg?size=24&color=3e3e3e`}
                           />
                         </Flex>
                       </Link>
