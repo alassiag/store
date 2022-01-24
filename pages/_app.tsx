@@ -29,11 +29,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
         {/* Fin de meta tags de licencia */}
       </Head>
       <ChakraProvider theme={theme}>
-        <Container
-          backgroundColor="white"
-          borderRadius="sm"
-          maxWidth="container.xl"
-          padding={4}
+        <Container backgroundColor="white" borderRadius="sm" maxWidth="container.xl" padding={4}
         >
           <Stack spacing={8}>
             <Stack marginBottom={4} spacing={4}>
@@ -41,13 +37,13 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                 borderRadius="lg"
                 boxShadow="0 0 8px 4px rgba(0,0,0,0.96)"
                 height="100%"
-                maxHeight={{ base: "48", sm: "64" }}
+                maxHeight={{base: "48", sm: "64"}}
                 objectFit="cover"
                 src={INFORMATION.banner}
               />
               <Stack
                 alignItems="center"
-                direction={{ base: "column", sm: "row" }}
+                direction={{base: "column", sm: "row"}}
                 spacing={{ base: 3, sm: 6 }}
               >
                 <Box
