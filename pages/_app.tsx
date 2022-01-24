@@ -29,42 +29,47 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
         {/* Fin de meta tags de licencia */}
       </Head>
       <ChakraProvider theme={theme}>
-        <Container backgroundColor="white" borderRadius="sm" maxWidth="container.xl" padding={4}>
+        <Container
+          backgroundColor="white"
+          borderRadius="sm"
+          maxWidth="container.xl"
+          padding={4}
+        >
           <Stack spacing={8}>
             <Stack marginBottom={4} spacing={4}>
               <Image
                 borderRadius="lg"
                 boxShadow="0 0 8px 4px rgba(0,0,0,0.96)"
                 height="100%"
-                maxHeight={{base: "48", sm: "64"}}
+                maxHeight={{ base: "48", sm: "64" }}
                 objectFit="cover"
                 src={INFORMATION.banner}
               />
               <Stack
                 alignItems="center"
-                direction={{base: "column", sm: "row"}}
-                spacing={{base: 3, sm: 6}}
+                direction={{ base: "column", sm: "row" }}
+                spacing={{ base: 3, sm: 6 }}
               >
                 <Box
                   backgroundColor="white"
                   borderRadius={9999}
-                  marginLeft={{base: 0, sm: 6}}
-                  marginTop={{base: -12, sm: -16}}
-                  minWidth={{base: 24, sm: 32}}
+                  marginLeft={{ base: 0, sm: 6 }}
+                  marginTop={{ base: -12, sm: -16 }}
+                  minWidth={{ base: 24, sm: 32 }}
                   padding={1}
                 >
                   <Image
                     //border="1px solid #3e3e3e"
                     borderRadius={9999}
-                    height={{base: 24, sm: 32}}
+                    height={{ base: 24, sm: 32 }}
                     src={INFORMATION.avatar}
-                    width={{base: 24, sm: 32}}
+                    width={{ base: 24, sm: 32 }}
                   />
                 </Box>
                 <Stack
-                  alignItems={{base: "center", sm: "flex-start"}}
+                  alignItems={{ base: "center", sm: "flex-start" }}
                   spacing={3}
-                  textAlign={{base: "center", sm: "left"}}
+                  textAlign={{ base: "center", sm: "left" }}
                 >
                   <Stack spacing={0}>
                     <Heading>{INFORMATION.title}</Heading>
@@ -77,13 +82,18 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                       <Link key={social.name} isExternal href={social.url}>
                         <Flex
                           alignItems="center"
-                          //backgroundColor="gray.500"
                           borderRadius={9999}
                           boxShadow="0 0 5px 2px rgba(25,25,25,0.4)"
                           color="white"
                           height={10}
                           justifyContent="center"
                           width={10}
+                          transition="0.2s"
+                          _hover={{
+                            transition: " 0.2s",
+                            transform: "scale(1.02)",
+                            boxShadow: "3px 3px 10px -4px rgba(0,0,0,0.9)"
+                          }}
                         >
                           <Image
                             src={`https://icongr.am/fontawesome/${social.name}.svg?size=24&color=3e3e3e`}
@@ -99,8 +109,14 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
           </Stack>
           <Divider marginY={4} />
           <Stack backgroundColor="gray.800" bordertop="1px" paddingY={3}>
-            <Text color="white" fontSize="sm" fontWeight="500" textAlign="center">
-              {new Date().getFullYear()}. Tyni Home Deco - Seguinos en nuestras redes sociales
+            <Text
+              color="white"
+              fontSize="sm"
+              fontWeight="500"
+              textAlign="center"
+            >
+              {new Date().getFullYear()}. Tyni Home Deco - Seguinos en nuestras
+              redes sociales
               {/*<Link isExternal href="https://instagram.com/tyni_home_deco" >*/}
               {/*</Link>*/}
             </Text>

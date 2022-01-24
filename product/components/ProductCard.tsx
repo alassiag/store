@@ -39,7 +39,6 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
           transition="0.2s"
           _hover={{
             transition: " 0.2s",
-            transform: "scale(1.02)",
             boxShadow: "3px 3px 10px -4px rgba(0,0,0,0.9)",
           }}
         >
