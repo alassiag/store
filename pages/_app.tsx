@@ -34,7 +34,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
             <Stack marginBottom={4} spacing={4}>
               <Image
                 borderRadius="lg"
-                boxShadow=" 0 0 8px 4px rgba(0,0,0,0.96)"
+                boxShadow="0 0 8px 4px rgba(0,0,0,0.96)"
                 height="100%"
                 maxHeight={{base: "48", sm: "64"}}
                 objectFit="cover"

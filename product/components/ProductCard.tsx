@@ -29,12 +29,19 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
         spacing={3}
       >
         <Stack
+          borderRadius={8}
           backgroundColor="gray.200"
-          boxShadow={`3px 3px 10px -4px rgba(0,0,0,0.9)`}
+          boxShadow={`0px 0px 10px -2px rgba(0,0,0,0.5)`}
           direction="row"
           padding={2}
           spacing={4}
           width="100%"
+          transition="0.2s"
+          _hover={{
+            transition: " 0.2s",
+            transform: "scale(1.02)",
+            boxShadow: "3px 3px 10px -4px rgba(0,0,0,0.9)",
+          }}
         >
           <Image
             backgroundColor="white"
