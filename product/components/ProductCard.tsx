@@ -70,13 +70,15 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
                 {parseCurrency(product.price)}
               </Text>
               <Button
+                alignItems="center"
+                justifyContent="center"
                 backgroundColor="gray.400"
                 size="xs"
                 onClick={() =>
                   product.options ? toggleModal(true) : onAdd(cartItem)
                 }
                 leftIcon={
-                  <Image display={{ base: "flex", sm: "none" }} src="https://icongr.am/material/cart-plus.svg?size=22&color=3e3e3e" />
+                  <Image display={{ base: "flex", sm: "none" }} paddingLeft="8px" src="https://icongr.am/material/cart-plus.svg?size=22&color=ffffff" />
                 }
               >
                 <Text display={{ base: "none", sm: "flex" }}>Agregar</Text>
