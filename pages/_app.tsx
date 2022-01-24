@@ -48,9 +48,9 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                 <Box
                   backgroundColor="white"
                   borderRadius={9999}
-                  marginLeft={{base: 0, sm: 6 }}
-                  marginTop={{base: -12, sm: -16 }}
-                  minWidth={{base: 24, sm: 32 }}
+                  marginLeft={{base: 0, sm: 6}}
+                  marginTop={{base: -12, sm: -16}}
+                  minWidth={{base: 24, sm: 32}}
                   padding={1}
                 >
                   <Image
@@ -82,12 +82,12 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                           color="white"
                           height={10}
                           justifyContent="center"
-                          width={10}
                           transition="0.2s"
+                          width={10}
                           _hover={{
                             boxShadow: "3px 3px 10px -4px rgba(0,0,0,0.9)",
                             transform: "scale(1.02)",
-                            transition: " 0.2s"
+                            transition: " 0.2s",
                           }}
                         >
                           <Image
