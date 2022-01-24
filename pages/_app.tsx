@@ -29,7 +29,11 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
         {/* Fin de meta tags de licencia */}
       </Head>
       <ChakraProvider theme={theme}>
-        <Container backgroundColor="white" borderRadius="sm" maxWidth="container.xl" padding={4}
+        <Container
+          backgroundColor="white"
+          borderRadius="sm"
+          maxWidth="container.xl"
+          padding={4}
         >
           <Stack spacing={8}>
             <Stack marginBottom={4} spacing={4}>
@@ -37,13 +41,13 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                 borderRadius="lg"
                 boxShadow="0 0 8px 4px rgba(0,0,0,0.96)"
                 height="100%"
-                maxHeight={{base: "48", sm: "64"}}
+                maxHeight={{ base: "48", sm: "64" }}
                 objectFit="cover"
                 src={INFORMATION.banner}
               />
               <Stack
                 alignItems="center"
-                direction={{base: "column", sm: "row"}}
+                direction={{ base: "column", sm: "row" }}
                 spacing={{ base: 3, sm: 6 }}
               >
                 <Box
@@ -86,9 +90,9 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                           width={10}
                           transition="0.2s"
                           _hover={{
-                            transition: " 0.2s",
+                            boxShadow: "3px 3px 10px -4px rgba(0,0,0,0.9)",
                             transform: "scale(1.02)",
-                            boxShadow: "3px 3px 10px -4px rgba(0,0,0,0.9)"
+                            transition: " 0.2s"
                           }}
                         >
                           <Image
@@ -105,14 +109,8 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
           </Stack>
           <Divider marginY={4} />
           <Stack backgroundColor="gray.800" bordertop="1px" paddingY={3}>
-            <Text
-              color="white"
-              fontSize="sm"
-              fontWeight="500"
-              textAlign="center"
-            >
-              {new Date().getFullYear()}. Tyni Home Deco - Seguinos en nuestras
-              redes sociales
+            <Text color="white" fontSize="sm" fontWeight="500" textAlign="center">
+              {new Date().getFullYear()}. Tyni Home Deco - Seguinos en nuestras redes sociales
               {/*<Link isExternal href="https://instagram.com/tyni_home_deco" >*/}
               {/*</Link>*/}
             </Text>
