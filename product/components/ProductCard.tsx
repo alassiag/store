@@ -75,8 +75,11 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
                 onClick={() =>
                   product.options ? toggleModal(true) : onAdd(cartItem)
                 }
+                leftIcon={
+                  <Image display={{ base: "flex", sm: "none" }} src="https://icongr.am/material/cart-plus.svg?size=22&color=3e3e3e" />
+                }
               >
-                Agregar
+                <Text display={{ base: "none", sm: "flex" }}>Agregar</Text>
               </Button>
             </Stack>
           </Stack>
